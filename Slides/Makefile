@@ -1,4 +1,4 @@
-file=mc750
+file=ra082941_ondas
 make:
 	latex $(file).tex
 	latex $(file).tex
