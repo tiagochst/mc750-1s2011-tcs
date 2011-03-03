@@ -1,0 +1,197 @@
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%
+%  MC750 Interfaces homem-computador              %  
+%  Template para Slides                           %
+%  Data:1/03/2011                                %
+%  Unicamp,Campinas,São Paulo,Brasil              %
+%  Grupo:                                         %
+%    - Tiago Chedraoui Silva                      %
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%
+\documentclass[dvips,11pt]{beamer}
+
+%%% fontes %%%
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[brazil]{babel}    % dá suporte para os termos na língua portuguesa do Brasi
+
+
+%%% matematicos %%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+
+\usepackage{multicol}  
+%%% figuras %%%
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+
+%%% tabelas %%%
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{fancyvrb}
+\usepackage{color}
+
+%%% outros %%%
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{hyperref} %internal links
+\usepackage{color}       
+\usepackage{indentfirst} %retira padrao americano de paragrafos
+\usepackage{multicol}    
+\numberwithin{table}{section}
+\numberwithin{figure}{section} %numercao de figuras por secao
+
+
+%%% usado para codigo %%%
+\usepackage{listings}
+\lstset{
+  language = Java,
+  basicstyle=\footnotesize\ttfamily, 
+  numbers=left,               
+  numberstyle=\tiny,         
+  %stepnumber=2,              
+  numbersep=5pt,             
+  tabsize=8,                  
+  extendedchars=true,  
+  breaklines=true,       
+  keywordstyle=\color{blue},
+  frame=b,         
+  stringstyle=\color{red}\ttfamily, 
+  showspaces=false,          
+  showtabs=false,             
+  xleftmargin=17pt,
+  framexleftmargin=17pt,
+  framexrightmargin=5pt,
+  framexbottommargin=4pt,
+  %backgroundcolor=\color{lightgray},
+  showstringspaces=false              
+}
+\lstloadlanguages{C}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFont{green}{\color{green}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+%\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+
+%%% extras %%%
+\RequirePackage{marvosym} % figuras \Letter \Email 
+\usepackage{fancyhdr}     % Headers
+\usepackage{epsf}
+
+
+%%% Beamer style %%%
+\usetheme{Warsaw}      % estilos slides
+%\usefonttheme[onlylarge]{structurebold}   % fontes em negrito
+\setbeamertemplate{navigation symbols}{}  % barra de navegacao superior
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} %define tamanhos de letras
+\setbeamertemplate{note page}{plain}      % não sei
+\setbeamercovered{transparent}
+
+%-%-%-%-%-%-%-%-%-%
+%  Inicio Slides  %
+%-%-%-%-%-%-%-%-%-%
+
+%%% CAPA %%%
+\title{MC750 - Construção de Interfaces Homem-Computador}                                
+\author[Tiago S.]{
+  Tiago Silva  
+}
+\institute{Universidade Estadual de Campinas}
+\date{\today}
+%%% END CAPA %%%
+
+
+\begin{document}
+
+
+%-%-%-%-%-%-%
+%  Capa     %
+%  Topicos  %
+%-%-%-%-%-%-%
+\begin{frame}
+  \titlepage % slide 1 - capa
+\end{frame}
+
+\section{Introdução}
+
+
+\begin{frame}
+  \frametitle{Paradigmas}
+  \begin{itemize}
+  \item Primeiro e Segundo paradigmas
+    \begin{itemize}
+         \item <1-> Racional
+       \item <1-> Trabalho
+     \end{itemize}
+    
+    \pause \item Terceiro paradigma
+    \begin{itemize}
+       \item <3-> Vida
+       \item <3-> Lazer
+       \item <3-> Emoção 
+    \end{itemize}
+    
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{IHC - As ondas}
+  \begin{itemize}
+  \item Primeira onda 
+    \begin{itemize}
+      \pause   \item <1->Foco no indivíduo
+      \pause \item <1->Fatores humanos
+      \pause \item <1->Indivíduo passivo
+    \end{itemize}
+    
+    \pause \item Segunda onda 
+    \begin{itemize}
+      \pause \item <5->Foco na comunicação entre máquina e homem.
+      \pause \item <5->Atores humanos
+      \pause \item <5->Indivíduo ativo
+      \pause \item <5->Foco no grupo
+
+    \end{itemize}
+    
+    \pause \item Terceira onda
+    \begin{itemize}
+      \pause \item <10->Tecnologia extrapola fronteira dos locais trabalho
+      \pause \item <10->Passa a fazer parte da vida das pessoas
+      \pause \item <10-> Novas concepções: Mobilidade, compartilhamento de dados
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+\begin{frame}
+
+
+  \frametitle{Exemplo - Sistema de alerta em avião}
+  \begin{itemize}
+  \item Primeiro paradigma
+    \begin{itemize}
+      \pause   \item <1->Pilotos homens 
+      \pause \item <1->Idéia: Usar voz de uma mulher
+ 
+    \end{itemize}
+    
+    \pause \item Segundo paradigma
+    \begin{itemize}
+      \pause \item <4->Transmitir informação eficientemente
+      \pause \item <4->A mesma voz é a melhor para todos os homens e caso?
+      \pause \item <4->Classificação de tipos de vozes baseado na
+      eficácia de cada uma. 
+    \end{itemize}
+    
+    \pause \item Terceira onda
+    \begin{itemize}
+      \pause \item <8-> 1º e 2º paradigma -> Cockpit: ambiente masculino.
+      \pause \item <8-> E se tivéssemos uma mulher?
+      \pause \item <8-> 1º e 2º paradigma  falhariam!
+      \pause \item <8-> Sistema deve se adaptar ao meio.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
