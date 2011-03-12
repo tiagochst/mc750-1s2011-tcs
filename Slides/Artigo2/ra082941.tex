@@ -86,15 +86,11 @@
 
 %%% Beamer style %%%
 \usetheme{Darmstadt}
-\usefonttheme[onlylarge]{structurebold}
-\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
-\setbeamertemplate{navigation symbols}{}
+\usefonttheme[onlylarge]{structurebold} % fontes em negrito
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}%define tamanhos de letras
+\setbeamertemplate{navigation symbols}{}% barra de navegacao superior
 
-%\usetheme{Warsaw}      % estilos slides
-%\usefonttheme[onlylarge]{structurebold}   % fontes em negrito
-%\setbeamertemplate{navigation symbols}{}  % barra de navegacao superior
-%\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries} %define tamanhos de letras
-%\setbeamertemplate{note page}{plain}      % não sei
+%\usetheme{Warsaw}      % estilos mais usado =P
 %\setbeamercovered{transparent}
 
 %-%-%-%-%-%-%-%-%-%
@@ -102,7 +98,7 @@
 %-%-%-%-%-%-%-%-%-%
 
 %%% CAPA %%%
-\title{The Three Paradigms of HCI }                               
+\title{Reflecting Human values in the Digital Age }                               
 \subtitle{MC750 - Construção de Interfaces Homem-Computador}                               
  
 \author[Tiago S.]{
@@ -114,65 +110,113 @@ RA:082941
 %%% END CAPA %%%
 
 % The main document
-
 \begin{document}
 
 \begin{frame}
   \titlepage
 \end{frame}
 
-\begin{frame}{Outline}
-  \tableofcontents
-\end{frame}
+%\begin{frame}{Outline}
+%  \tableofcontents
+%\end{frame}
 
 
 \section{Introduction}
 
 \subsection{As cinco transformações}
 
-
-\begin{frame}{Finding pp-partitions of genotype matrices.}
-  Now comes the general case:
-  \begin{itemize}
-  \item The inputs $M$ are \alert{genotype matrices}.
-  \item The inputs $M$ \alert{do not allow a perfect phylogeny}.
-  \item What is $\chi_{\operatorname{PP}}(M)$?
-  \end{itemize}
+\begin{frame}{}
 
   % primeira transformação
-  \begin{exampleblock}{The end of interface stability}
-    % what an interface might be, where it ism what allows a user to do
-    Os cumputadores são cada vez mais parte do nosso ambiente. seja em lugares públicos ou privados.
-  \end{exampleblock}
+  % o fim da estabilidade
+  %  a partir do momento em que os computadores invadem a vida das
+  %  pessoas, participando tanto dos nossos espaços públicos quanto
+  %  privados perde-se a noção de localidade fixa: mobilidade
+  %  Perguntas surgem: o que deve ser uma interface, o que deve
+  %  permitir o usuário fazer e onde deve estar 
+  %  what an interface might be, where it ism what allows a user to do
+  
+  \pause \begin{block}{The end of interface stability}
+    \begin{itemize}
+      \pause  \item    Os computadores são cada vez mais parte do nosso ambiente 
+      \pause  \item    Local da interação humano-computador é desconhecido
+    \end{itemize}
+  \end{block}
   
   % segunda transformação
-  \begin{exampleblock}{The growth of techno-dependency}
-    % vocabulario underpins 
-    A computação participa quase todos os aspectos da nossa vida
-    % Nuvem, internet
-    Computadores depende de outros
-    % concepção de computadores: grande gama de tecnologia, sempre ligada/funcionando, sempre conectado em uma teia de sistemas  
-  \end{exampleblock}
+  % A segunda transformação diz a respeito da depencia criada em
+  % relação aos computadores.(Declaração de imposto de renda)
+  % Assim como as pessoas passaram a confiar mais nas pessoas, os
+  % computadores passaram a confiar em si (nuvem - sistemas distribuidos)
+  % Nuvem, internet
+  % concepção de computadores: grande gama de tecnologia, sempre ligada/funcionando, sempre conectado em uma teia de sistemas  
+  % tal dependencia cria novas preocupações, novas topicos de
+  % pesquisa, novas oportunidades de design
+  % concepção de computadores: grande gama de tecnologia, sempre ligada/funcionando, sempre conectado em uma teia de sistemas  
+\vspace{-0.7cm}
+  \begin{columns}[t]  
+
+    \column{.50\textwidth}
   
-  % terceira transformação
-  \begin{exampleblock}{The growth in hyperconnectivity}
+  \pause \begin{block}{The growth of techno-dependency}
     \begin{itemize}
-    \item Habilidade das novas ferramentas de melhorar a eficiência e
-      ganhar tempo
-    \item<alert@1> Mas, há um aumento no consumo de tempo devido a presença digital
+      \pause  \item  Dependência computacional
+      \pause  \item  Sistemas distribuídos
     \end{itemize}
-  \end{exampleblock}
-  
-  % quarta transformação
-  \begin{block}{The end of the ephemeral}
   \end{block}
 
-  % quinta transformação
-  \begin{block}{The growth of creative engagement}
-  \end{block}
-  
+
+  % O que guardar , porque guardar o que fazer com esses dados está
+  % mudando paralelamente aos sistemas
+  % Dados pessoais -> Digital figenprint 
+  % Passa de um usuário desconhecido para uma pessoa, um perfil!
+
+    \column{.50\textwidth}
+      
+    \uncover<11->{  \begin{block}{The end of the ephemeral}
+        \begin{itemize}
+       \uncover<12->{  \item \Gentsroom  \MVRightarrow \Info}
+        \uncover<13->{ \item ``Digital footprint''  }
+        \end{itemize}
+      \end{block}
+  }
+\end{columns}
+ % quarta transformação
+
+ \vspace{-0.2cm} 
+  \begin{columns}[t] 
+  % terceira transformação
+    \column{.50\textwidth}
+     \uncover<8-> {
+    \begin{block}{The growth in hyperconnectivity}
+      \begin{itemize}
+        % \item Habilidade das novas ferramentas de melhorar a eficiência e   ganhar tempo
+        % \item<alert@1> Mas, há um aumento no consumo de tempo devido a presença digital
+          \uncover<9->{ \item Novas ferramentas \MVRightarrow \hspace{0.5mm}  Eficiência e ganho tempo}
+         \uncover<10->{   \item<alert@1>  Presença digital  \MVRightarrow \hspace{0.5mm} Consumo de tempo  }
+        
+      \end{itemize}
+    \end{block}
+    }
+
+    % quinta transformação
+    % Novas tipos de ferramentas - pode-se trabalhar, jogar e expressarmos
+    % de novas maneira
+    % Antigamento computadores limita-se em mecanização e
+    % automatização de tarefas relacionadas trabalhos
+    % Instrumentos para criatividade -> programadores, podutores, editores
+    \column{.50\textwidth} 
+     \uncover<14->{ 
+      \begin{block}{The growth of creative engagement}
+        \begin{itemize}
+    \uncover<15->{        \item  Mecanização e automatização de tarefas  }
+   \uncover<16->{         \item  Novas ferramentas \MVRightarrow Criatividade}
+        \end{itemize}
+      \end{block}
+ }
+ \end{columns}
+ 
 \end{frame}
-
 
 \end{document}
 
