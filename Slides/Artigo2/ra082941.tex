@@ -1,17 +1,17 @@
 %-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%
-%  MC750 Interfaces homem-computador              %  
-%  Reflecting Human Values in the digital Age     %
-%  Data:10/03/2011                                %
-%  Unicamp,Campinas,São Paulo,Brasil              %
-%  Grupo:                                         %
-%    - Tiago Chedraoui Silva                      %
+% MC750 Interfaces homem-computador               %  
+% Reflecting Human Values in the digital Age      %
+% Data:10/03/2011                                 %
+% Unicamp,Campinas,SÃ£o Paulo,Brasil               %
+% Grupo:                                          %
+% - Tiago Chedraoui Silva                         %
 %-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%
 \documentclass[dvips,11pt]{beamer}
 
 %%% fontes %%%
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
-\usepackage[brazil]{babel}    % dá suporte para os termos na língua portuguesa do Brasi
+\usepackage[brazil]{babel}    % dá suporte para os termos na lÃ­ngua portuguesa do Brasil
 
 
 %%% matematicos %%%
@@ -50,7 +50,7 @@
   basicstyle=\footnotesize\ttfamily, 
   numbers=left,               
   numberstyle=\tiny,         
-  %stepnumber=2,              
+  % stepnumber=2,              
   numbersep=5pt,             
   tabsize=8,                  
   extendedchars=true,  
@@ -64,7 +64,7 @@
   framexleftmargin=17pt,
   framexrightmargin=5pt,
   framexbottommargin=4pt,
-  %backgroundcolor=\color{lightgray},
+  % backgroundcolor=\color{lightgray},
   showstringspaces=false              
 }
 \lstloadlanguages{C}
@@ -72,7 +72,7 @@
 \DeclareCaptionFont{white}{\color{white}}
 \DeclareCaptionFont{green}{\color{green}}
 \DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
-%\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+% \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
 
 
 %%% extras %%%
@@ -90,20 +90,20 @@
 \setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}%define tamanhos de letras
 \setbeamertemplate{navigation symbols}{}% barra de navegacao superior
 
-%\usetheme{Warsaw}      % estilos mais usado =P
-%\setbeamercovered{transparent}
+% \usetheme{Warsaw}      % estilos mais usado =P
+% \setbeamercovered{transparent}
 
-%-%-%-%-%-%-%-%-%-%
-%  Inicio Slides  %
-%-%-%-%-%-%-%-%-%-%
+% -%-%-%-%-%-%-%-%-%
+% Inicio Slides  %
+% -%-%-%-%-%-%-%-%-%
 
 %%% CAPA %%%
 \title{Reflecting Human values in the Digital Age }                               
 \subtitle{MC750 - Construção de Interfaces Homem-Computador}                               
- 
+
 \author[Tiago S.]{
   Tiago Chedraoui Silva \\
-RA:082941 
+  RA:082941 
 }
 \institute{Universidade Estadual de Campinas}
 \date{\today}
@@ -116,9 +116,9 @@ RA:082941
   \titlepage
 \end{frame}
 
-%\begin{frame}{Outline}
-%  \tableofcontents
-%\end{frame}
+% \begin{frame}{Outline}
+%   \tableofcontents
+% \end{frame}
 
 
 \section{Introduction}
@@ -129,12 +129,12 @@ RA:082941
 
   % primeira transformação
   % o fim da estabilidade
-  %  a partir do momento em que os computadores invadem a vida das
-  %  pessoas, participando tanto dos nossos espaços públicos quanto
-  %  privados perde-se a noção de localidade fixa: mobilidade
-  %  Perguntas surgem: o que deve ser uma interface, o que deve
-  %  permitir o usuário fazer e onde deve estar 
-  %  what an interface might be, where it ism what allows a user to do
+  % a partir do momento em que os computadores invadem a vida das
+  % pessoas, participando tanto dos nossos espaços públicos quanto
+  % privados perde-se a noção de localidade fixa: mobilidade
+  % Perguntas surgem: o que deve ser uma interface, o que deve
+  % permitir o usuário fazer e onde deve estar 
+  % what an interface might be, where it ism what allows a user to do
   
   \pause \begin{block}{The end of interface stability}
     \begin{itemize}
@@ -153,51 +153,50 @@ RA:082941
   % tal dependencia cria novas preocupações, novas topicos de
   % pesquisa, novas oportunidades de design
   % concepção de computadores: grande gama de tecnologia, sempre ligada/funcionando, sempre conectado em uma teia de sistemas  
-\vspace{-0.7cm}
+  \vspace{-0.7cm}
   \begin{columns}[t]  
-
+    
     \column{.50\textwidth}
-  
-  \pause \begin{block}{The growth of techno-dependency}
-    \begin{itemize}
-      \pause  \item  Dependência computacional
-      \pause  \item  Sistemas distribuídos
-    \end{itemize}
-  \end{block}
-
-  % Quarta transformação
-  % O que guardar , porque guardar o que fazer com esses dados está
-  % mudando paralelamente aos sistemas
-  % Dados pessoais -> Digital figenprint -> passamos a ser visiveis e
-  % entendiveis de uma maneira que não sabe ou vemos. 
-  % copyright on digital footprint
-  % Passa de um usuário desconhecido para uma pessoa, um perfil!
-    \column{.50\textwidth}
-      
-    \uncover<11->{  \begin{block}{The end of the ephemeral}
-        \begin{itemize}
-       \uncover<12->{  \item \Gentsroom  \MVRightarrow \Info}
-        \uncover<13->{ \item ``Digital footprint''  }
-        \end{itemize}
-      \end{block}
-  }
-\end{columns}
-
-
- \vspace{-0.2cm} 
-  \begin{columns}[t] 
-  % terceira transformação
-    \column{.50\textwidth}
-     \uncover<8-> {
-    \begin{block}{The growth in hyperconnectivity}
+    \pause \begin{block}{The growth of techno-dependency}
       \begin{itemize}
-        % \item Habilidade das novas ferramentas de melhorar a eficiência e   ganhar tempo
-        % \item<alert@1> Mas, há um aumento no consumo de tempo devido a presença digital
-          \uncover<9->{ \item Novas ferramentas \MVRightarrow \hspace{0.5mm}  Eficiência e ganho tempo}
-         \uncover<10->{   \item<alert@1>  Presença digital  \MVRightarrow \hspace{0.5mm} Consumo de tempo  }
-        
+        \pause  \item  Dependência computacional
+        \pause  \item  Sistemas distribuídos
       \end{itemize}
     \end{block}
+    
+    % Quarta transformação
+    % O que guardar , porque guardar o que fazer com esses dados está
+    % mudando paralelamente aos sistemas
+    % Dados pessoais -> Digital figenprint -> passamos a ser visiveis e
+    % entendiveis de uma maneira que não sabe ou vemos. 
+    % copyright on digital footprint
+    % Passa de um usuário desconhecido para uma pessoa, um perfil!
+    \column{.50\textwidth}
+    
+    \uncover<11->{  \begin{block}{The end of the ephemeral}
+        \begin{itemize}
+          \uncover<12->{  \item \Gentsroom  \MVRightarrow \Info}
+          \uncover<13->{ \item ``Digital footprint''  }
+        \end{itemize}
+      \end{block}
+    }
+  \end{columns}
+  
+
+  \vspace{-0.2cm} 
+  \begin{columns}[t] 
+    % terceira transformação
+    \column{.50\textwidth}
+    \uncover<8-> {
+      \begin{block}{The growth in hyperconnectivity}
+        \begin{itemize}
+          % \item Habilidade das novas ferramentas de melhorar a eficiência e   ganhar tempo
+          % \item<alert@1> Mas, há um aumento no consumo de tempo devido a presença digital
+          \uncover<9->{ \item Novas ferramentas \MVRightarrow \hspace{0.5mm}  Eficiência e ganho tempo}
+          \uncover<10->{   \item<alert@1>  Presença digital  \MVRightarrow \hspace{0.5mm} Consumo de tempo  }
+          
+        \end{itemize}
+      \end{block}
     }
 
     % quinta transformação
@@ -207,42 +206,66 @@ RA:082941
     % automatização de tarefas relacionadas trabalhos
     % Instrumentos para criatividade -> programadores, podutores, editores
     \column{.50\textwidth} 
-     \uncover<14->{ 
+    \uncover<14->{ 
       \begin{block}{The growth of creative engagement}
         \begin{itemize}
-    \uncover<15->{        \item  Mecanização e automatização de tarefas  }
-   \uncover<16->{         \item  Novas ferramentas \MVRightarrow Criatividade}
+          \uncover<15->{\item  Mecanização e automatização de tarefas  }
+          \uncover<16->{\item  Novas ferramentas \MVRightarrow
+            \hspace{0.5mm}  Criatividade}
         \end{itemize}
       \end{block}
- }
- \end{columns}
- 
+    }
+  \end{columns}
+  
 \end{frame}
 
-  % Questões que as transformações implicaram:
-  % Primeira transformação:
-  % Quais técnicas de interação são apropriadas para dispositivos  que
-  % estão em se não á uma interface explicita?
-  % 
-  % Transformação: Dependecia
-  % Como um computador pode ser projetado para ajudar as pessoas a
-  % lidar quando dispositivos são perdidos, falham, ou quando à uma
-  % falha na infraestutura
-  % Digital Footprint (Pegada digital - rastro)
-  % 1- Que tecnologias é necessário para gerencia grande quantidade de
-  % dados pessoas?
-  % 2- Como as pessoas podem saber sobre sua digital footprint 
-  % assim como sobre ferramentas que podem ajudar a interrogar os
-  % sistemas envolvidos e a análise de dados?
-  % 3- Como podemos equilibrar a captura de informação a a necessidade
-  % de privacidade?
-  % Como a sociedade vai reagir as mudanças provocadas pelos computadores?
-  % Como o impacto será tradado em diferentes situações,lugares e
-  % culturas .
-  % Questões éticas
+% Questões que as transformações implicaram:
+% Primeira transformação:
+% Quais técnicas de interação são apropriadas para dispositivos  que
+% estão em se não á uma interface explicita?
+% 
+% Transformação: Dependecia
+% Como um computador pode ser projetado para ajudar as pessoas a
+% lidar quando dispositivos são perdidos, falham, ou quando Ã  uma
+% falha na infraestutura
+% Digital Footprint (Pegada digital - rastro)
+% 1- Que tecnologias é necessário para gerencia grande quantidade de
+% dados pessoas?
+% 2- Como as pessoas podem saber sobre sua digital footprint 
+% assim como sobre ferramentas que podem ajudar a interrogar os
+% sistemas envolvidos e a analise de dados?
+% 3- Como podemos equilibrar a captura de informacao a a necessidade
+% de privacidade?
+% Como a sociedade vai reagir as mudanças provocadas pelos computadores?
+% Como o impacto sera tradado em diferentes situacoes,lugares e
+% culturas .
+% Questoes eticas
 
+\subsection{A new approach for HCI}
 
+\begin{frame}{}
 
+  \begin{itemize}
+    \pause  \item    Questões levantadas pelas transformações
+    \MVRightarrow  \hspace{0.5mm}  Aproximação mais amplo
+    % Aproximação mais amplo = broader approach?
+  \end{itemize}
+
+  \pause \begin{block}{ciclo iterativo} %iterative cycle
+    \begin{itemize}
+      \pause  \item    Estudar - Coleata de informações
+      % Log das interação dos usuários, estudo etnográficos,
+      \pause  \item    Projetar - Porque, o que e como projetar algo melhor
+      \pause  \item    Desenvolver - Protótipos
+      \pause  \item    Avaliar - Avaliação do protótipo pelo público alvo
+    \end{itemize}
+  \end{block}
+  
+  \begin{itemize}
+    \pause  \item  Pré-estágio - Entender
+    % undestand
+  \end{itemize}
+  
+\end{frame}
 
 \end{document}
-
