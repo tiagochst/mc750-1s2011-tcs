@@ -1,2 +1,5 @@
 \beamer@endinputifotherversion {3.06pt}
 \select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\c c\~ao}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{As cinco transforma\c c\~oes}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Uma nova abordagem para o HCI}{18}{0}{1}
