@@ -1,4 +1,4 @@
-file=ra082941
+file=ra082941_2
 make:
 	latex $(file).tex
 	latex $(file).tex
