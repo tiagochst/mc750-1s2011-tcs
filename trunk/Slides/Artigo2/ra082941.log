@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.5.28)  14 MAR 2011 12:13
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.5.28)  16 MAR 2011 12:30
 entering extended mode
  %&-line parsing enabled.
 **ra082941.tex
@@ -643,58 +643,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(/usr/share/texmf/tex/latex/tools/multicol.sty
-Package: multicol 2006/05/18 v1.6g multicolumn formatting (FMi)
-\c@tracingmulticols=\count150
-\mult@box=\box54
-\multicol@leftmargin=\dimen179
-\c@unbalance=\count151
-\c@collectmore=\count152
-\doublecol@number=\count153
-\multicoltolerance=\count154
-\multicolpretolerance=\count155
-\full@width=\dimen180
-\page@free=\dimen181
-\premulticols=\dimen182
-\postmulticols=\dimen183
-\multicolsep=\skip55
-\multicolbaselineskip=\skip56
-\partial@page=\box55
-\last@line=\box56
-\mult@rightbox=\box57
-\mult@grightbox=\box58
-\mult@gfirstbox=\box59
-\mult@firstbox=\box60
-\@tempa=\box61
-\@tempa=\box62
-\@tempa=\box63
-\@tempa=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\c@columnbadness=\count156
-\c@finalcolumnbadness=\count157
-\last@try=\dimen184
-\multicolovershoot=\dimen185
-\multicolundershoot=\dimen186
-\mult@nat@firstbox=\box78
-\colbreak@box=\box79
-)
 (/usr/share/texmf/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen187
-\WF@size=\dimen188
-\c@WF@wrappedlines=\count158
-\WF@box=\box80
+\wrapoverhang=\dimen179
+\WF@size=\dimen180
+\c@WF@wrappedlines=\count150
+\WF@box=\box54
 \WF@everypar=\toks47
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -703,42 +656,42 @@ Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
 
 (/usr/share/texmf/tex/latex/tools/array.sty
 Package: array 2005/08/23 v2.4b Tabular extension package (FMi)
-\col@sep=\dimen189
-\extrarowheight=\dimen190
+\col@sep=\dimen181
+\extrarowheight=\dimen182
 \NC@list=\toks48
-\extratabsurround=\skip57
-\backup@length=\skip58
+\extratabsurround=\skip55
+\backup@length=\skip56
 )
 \everycr=\toks49
-\minrowclearance=\skip59
+\minrowclearance=\skip57
 )
 (/usr/share/texmf/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip60
-\LTright=\skip61
-\LTpre=\skip62
-\LTpost=\skip63
-\LTchunksize=\count159
-\LTcapwidth=\dimen191
-\LT@head=\box81
-\LT@firsthead=\box82
-\LT@foot=\box83
-\LT@lastfoot=\box84
-\LT@cols=\count160
-\LT@rows=\count161
-\c@LT@tables=\count162
-\c@LT@chunks=\count163
+\LTleft=\skip58
+\LTright=\skip59
+\LTpre=\skip60
+\LTpost=\skip61
+\LTchunksize=\count151
+\LTcapwidth=\dimen183
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@cols=\count152
+\LT@rows=\count153
+\c@LT@tables=\count154
+\c@LT@chunks=\count155
 \LT@p@ftn=\toks50
 )
 (/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 1998/07/17
 
 Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
-\FV@CodeLineNo=\count164
+\FV@CodeLineNo=\count156
 \FV@InFile=\read2
-\FV@TabBox=\box85
-\c@FancyVerbLine=\count165
-\FV@StepNumber=\count166
+\FV@TabBox=\box59
+\c@FancyVerbLine=\count157
+\FV@StepNumber=\count158
 \FV@OutFile=\write5
 
 No file fancyvrb.cfg.
@@ -811,6 +764,53 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )
 (/usr/share/texmf/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texmf/tex/latex/tools/multicol.sty
+Package: multicol 2006/05/18 v1.6g multicolumn formatting (FMi)
+\c@tracingmulticols=\count159
+\mult@box=\box60
+\multicol@leftmargin=\dimen184
+\c@unbalance=\count160
+\c@collectmore=\count161
+\doublecol@number=\count162
+\multicoltolerance=\count163
+\multicolpretolerance=\count164
+\full@width=\dimen185
+\page@free=\dimen186
+\premulticols=\dimen187
+\postmulticols=\dimen188
+\multicolsep=\skip62
+\multicolbaselineskip=\skip63
+\partial@page=\box61
+\last@line=\box62
+\mult@rightbox=\box63
+\mult@grightbox=\box64
+\mult@gfirstbox=\box65
+\mult@firstbox=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\c@columnbadness=\count165
+\c@finalcolumnbadness=\count166
+\last@try=\dimen189
+\multicolovershoot=\dimen190
+\multicolundershoot=\dimen191
+\mult@nat@firstbox=\box84
+\colbreak@box=\box85
 )
 (/usr/share/texmf/tex/latex/listings/listings.sty
 \lst@mode=\count167
@@ -1135,13 +1135,14 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 
 [1
 
+] (./ra082941.toc) [2
+
 ]
 LaTeX Font Info:    Try loading font information for U+mvs on input line 220.
- (/usr/share/texmf/tex/latex/marvosym/umvs.fd) [2
+ (/usr/share/texmf/tex/latex/marvosym/umvs.fd) [3
 
-] [3
-
-] [4
+]
+[4
 
 ] [5
 
@@ -1149,8 +1150,7 @@ LaTeX Font Info:    Try loading font information for U+mvs on input line 220.
 
 ] [7
 
-]
-[8
+] [8
 
 ] [9
 
@@ -1174,20 +1174,30 @@ LaTeX Font Info:    Try loading font information for U+mvs on input line 220.
 
 ] [19
 
-] [20
+]
+[20
 
 ] [21
 
 ] [22
 
-]
-[23
+] [23
 
 ] [24
 
 ] [25
 
 ] [26
+
+] [27
+
+] [28
+
+] [29
+
+] [30
+
+] [31
 
 ]
 \tf@nav=\write7
@@ -1206,12 +1216,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18848 strings out of 256217
- 346135 string characters out of 1917095
- 469463 words of memory out of 1500000
- 21685 multiletter control sequences out of 10000+200000
- 9288 words of font info for 23 fonts, out of 1200000 for 2000
+ 18923 strings out of 256217
+ 348162 string characters out of 1917095
+ 471120 words of memory out of 1500000
+ 21756 multiletter control sequences out of 10000+200000
+ 10838 words of font info for 25 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 49i,21n,59p,397b,1078s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 49i,21n,62p,397b,1079s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on ra082941.dvi (26 pages, 793680 bytes).
+Output written on ra082941.dvi (31 pages, 854268 bytes).
