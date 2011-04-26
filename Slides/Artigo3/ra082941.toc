@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.06pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\c c\~ao}{3}{0}{1}
+\beamer@sectionintoc {2}{Cria\c c\~ao de sistemas de visualiza\c c\~ao de design }{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Est\'agio 1}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Est\'agio 2}{28}{0}{2}
+\beamer@subsectionintoc {2}{3}{Est\'agio 3}{34}{0}{2}

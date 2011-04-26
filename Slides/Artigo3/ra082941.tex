@@ -1,0 +1,323 @@
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%
+% MC750 Interfaces homem-computador               %  
+% Reflecting Human Values in the digital Age      %
+% Data:10/03/2011                                 %
+% Unicamp,Campinas,SÃ£o Paulo,Brasil               %
+% Grupo:                                          %
+% - Tiago Chedraoui Silva                         %
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%
+\documentclass[dvips,11pt]{beamer}
+
+%%% fontes %%%
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[brazil]{babel}    % dá suporte para os termos na lÃ­ngua portuguesa do Brasil
+
+
+%%% matematicos %%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+
+%%% figuras %%%
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+
+%%% tabelas %%%
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{fancyvrb}
+\usepackage{color}
+
+%%% outros %%%
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{hyperref} %internal links
+\usepackage{color}       
+\usepackage{indentfirst} %retira padrao americano de paragrafos
+\usepackage{multicol}    
+\numberwithin{table}{section}
+\numberwithin{figure}{section} %numercao de figuras por secao
+
+
+%%% usado para codigo %%%
+\usepackage{listings}
+\lstset{
+  language = Java,
+  basicstyle=\footnotesize\ttfamily, 
+  numbers=left,               
+  numberstyle=\tiny,         
+  % stepnumber=2,              
+  numbersep=5pt,             
+  tabsize=8,                  
+  extendedchars=true,  
+  breaklines=true,       
+  keywordstyle=\color{blue},
+  frame=b,         
+  stringstyle=\color{red}\ttfamily, 
+  showspaces=false,          
+  showtabs=false,             
+  xleftmargin=17pt,
+  framexleftmargin=17pt,
+  framexrightmargin=5pt,
+  framexbottommargin=4pt,
+  % backgroundcolor=\color{lightgray},
+  showstringspaces=false              
+}
+\lstloadlanguages{C}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFont{green}{\color{green}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+% \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+
+%%% extras %%%
+\RequirePackage{marvosym} % figuras \Letter \Email 
+\usepackage{fancyhdr}     % Headers
+\usepackage{epsf}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\tikzstyle{block}=[draw opacity=0.7,line width=1.4cm]
+
+
+%%% Beamer style %%%
+\usetheme{Darmstadt}
+\usefonttheme[onlylarge]{structurebold} % fontes em negrito
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}%define tamanhos de letras
+\setbeamertemplate{navigation symbols}{}% barra de navegacao superior
+
+% \usetheme{Warsaw}      % estilos mais usado =P
+% \setbeamercovered{transparent}
+
+% -%-%-%-%-%-%-%-%-%
+% Inicio Slides  %
+% -%-%-%-%-%-%-%-%-%
+
+%%% CAPA %%%
+\title{Design Principles for Visual Communication }                               
+% Refletindo os valores humanos na era digital
+\subtitle{MC750 - Construção de Interfaces Homem-Computador}                               
+
+\author[Tiago S.]{
+  Tiago Chedraoui Silva \\
+  RA:082941 
+}
+\institute{Universidade Estadual de Campinas}
+\date{\today}
+%%% END CAPA %%%
+
+% The main document
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+ \begin{frame}{Outline}
+   \tableofcontents
+ \end{frame}
+
+
+\section{Introdução}
+
+\begin{frame}{Introdução}
+    \begin{itemize}
+        \item    A taxa com que as pessoas geram novos
+      dados está crescendo exponencialmente ano a ano. 
+      \pause  \item   É preciso entender os dados para produzir um
+      valor real e ser usado para tomar decisões
+      \pause  \item Freqüentemente, os dados são mal visualizados ou
+      nem visualizados!
+    \end{itemize}
+ 
+  \pause \begin{alertblock}{Catástrofe} %iterative cycle
+ 
+  \begin{itemize}
+    \pause  \item  Engenheiros falharam em visualmente comunicar o
+    risco de se lançar o ônibus espacial Challenger em 1986
+  \end{itemize}
+\end{alertblock}
+
+\end{frame}
+\begin{frame}{Princípio de design}
+
+%  Hábeis designers visuais manipulam a percepção, cognição e
+%intenção comunicativa de visualizações aplicando com cuidado princípios
+%do bom design.
+
+  \begin{itemize}
+  \item Princípios do bom design  manipulam a percepção, cognição e
+    intenção comunicativa de visualizações
+    
+  \pause\item Técnicas podem enfatizar informações importantes ou desenfatizar detalhes irrelevantes
+  \end{itemize}
+
+  \pause \begin{block}{Exemplo - Metrô} %iterative cycle
+    
+    \begin{itemize}
+      
+      \pause  \item Importante 
+      \begin{itemize}
+      \item Paradas
+      \item Paradas que possibilitam mudança de linha
+      \end{itemize}
+      
+      \pause  \item Não importante 
+      
+      \begin{itemize}
+      \item  Desenho geográfico real de cada linha
+      \end{itemize}
+      
+    \end{itemize}
+  \end{block}
+  
+  \pause \begin{block}{Definição - Princípio de design } %iterative cycle
+    
+      \begin{itemize}
+      \item Orientações que ajudam a
+        melhorar a compreensão das pessoas de
+        informação visualmente  codificada.
+      \end{itemize}
+    \end{block}
+  \end{frame}
+
+\section{Criação de sistemas de visualização de
+  design }
+\begin{frame}{Os três estágios}
+
+
+%  Hábeis designers visuais manipulam a percepção, cognição e
+%intenção comunicativa de visualizações aplicando com cuidado princípios
+%do bom design.
+
+ 
+
+ \pause \begin{block}{Estágio 1 - Identificar os princípios de design} %iterative cycle
+    \begin{itemize}
+    \item  É analisado, para um
+      domínio específico, a melhor visualizações projetados à mão.
+    \end{itemize}
+  \end{block}
+ 
+ \pause \begin{block}{Estágio 2 - Instanciar os princípios de design} %iterative cycle
+    \begin{itemize}
+    \item  Codificar os princípios de design
+      em algoritmos e interfaces para a criação de visualizações
+    \end{itemize}
+  \end{block}
+  
+ \pause \begin{block}{Estágio 3 - Avaliar os princípios de design} %iterative cycle
+    \begin{itemize}
+    \item   Validar os princípios de design. 
+    \item Quão melhor foi o
+      processamento da informação, comunicação e tomada de decisões
+      a partir das visualizações?
+    \end{itemize}
+  \end{block}
+  \end{frame}
+
+\subsection{Estágio 1}
+\begin{frame}{Extraindo e formulando princípios de design}
+  \pause \begin{block}{Estratégias} %iterative cycle
+    \begin{enumerate}
+  \pause  \item Analisar as melhores visualizações feitas à mão  
+      \begin{itemize}
+   \pause   \item Similaridades de dados colocados em destaque para um domínio 
+   \pause   \item Encontrar técnicas comuns para enfatizar informação
+      \end{itemize}
+
+    \pause  \item Analisar pesquisas anteriores sobre a percepção
+      e cognição de visualizações
+
+   \pause \item Conduzir novos estudos em usuários sobre como técnicas visuais afetam a percepção e cognição.
+
+      \begin{itemize}
+     \pause \item Produção - a partir de fotos do suporte da TV, usuários
+        montaram o suporte e desenharam um conjunto de instruções para montá-lo
+     \pause \item Preferência - Avaliação das visualizações
+     \pause \item Compreensão - Participantes usam visualizações com melhor avaliação.
+      \end{itemize}
+
+    \end{enumerate}
+   
+  \end{block}
+
+\end{frame}
+
+\subsection{Estágio 2}
+\begin{frame}{Selecionar propriedades visuais ou atributos para cada
+    elemento na exibição}
+  
+  
+  \begin{itemize}
+    \pause  \item Muitas possibilidades de escolha implicam em
+    um espaço de possíveis visualizações grande
+    \pause  \item Os princípios ajudam a obter um design eficaz
+    nesse grande espaço
+    \pause \item Princípios de design recaem em dois grupos:
+    regras de design e critério de avaliação
+  \end{itemize}
+  
+  
+  \pause \begin{block}{Regras de design} %iterative cycle
+    Separa design eficazes dos inviáveis
+  \end{block}
+  \pause \begin{block}{Critério de avaliação} %iterative cycle
+    Avaliar a eficácia de uma visualização
+    através de conjunto de critérios avaliação
+    que abrangem todos os principais aspectos da
+    design visual.
+  \end{block}
+  
+\end{frame}
+
+\subsection{Estágio 3}
+\begin{frame}{Medir  a utilidade da visualização produzida}
+  
+  \vspace{-2mm}
+  \pause \begin{block}{Feedback de usuários} %iterative cycle
+    
+    \begin{itemize}
+      \pause \item Pesquisa ou entrevista para obter
+      impressões globais do sistema. 
+      
+      \begin{itemize}
+        \pause  \item Identificação de problemas
+        \pause  \item Assegurar a convergência à um design efetivo
+      \end{itemize}
+      
+      \pause \item Lançar a visualização na Web
+      
+      \begin{itemize}
+        \pause  \item Checar estatísticas
+        \pause \item Se inefetiva é rapidamente rejeitada
+      \end{itemize}
+    \end{itemize}
+  \end{block}
+  \vspace{-1mm}
+  \pause \begin{block}{Estudos de usuários}
+    
+    
+    \begin{itemize}
+      \pause \item Comparar visualizações criadas a partir do algoritmo de
+      design com as melhores feitas à
+      mão
+      \pause\item Exemplo:Instrução para montagem de suporte de TV
+      
+      \begin{itemize}
+        \pause  \item Quão mais rápido foi feita a montagem?
+        \pause \item Diminui-se o número de erros na montagem? 
+      \end{itemize}
+      
+    \end{itemize}
+    
+  \end{block}
+  
+  
+\end{frame}
+
+
+\end{document}
