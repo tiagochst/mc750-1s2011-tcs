@@ -1,0 +1,186 @@
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%
+% MC750 Interfaces homem-computador               %  
+% Leitura 4                                       %
+% Data:17/05/2011                                 %
+% Unicamp,Campinas,SÃ£o Paulo,Brasil               %
+% Grupo:                                          %
+% - Tiago Chedraoui Silva                         %
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%
+\documentclass[dvips,11pt]{beamer}
+
+%%% fontes %%%
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[brazil]{babel}    % dá suporte para os termos na lÃ­ngua portuguesa do Brasil
+
+
+%%% matematicos %%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+
+%%% figuras %%%
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+
+%%% tabelas %%%
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{fancyvrb}
+\usepackage{color}
+
+%%% outros %%%
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{hyperref} %internal links
+\usepackage{color}       
+\usepackage{indentfirst} %retira padrao americano de paragrafos
+\usepackage{multicol}    
+\numberwithin{table}{section}
+\numberwithin{figure}{section} %numercao de figuras por secao
+
+
+%%% usado para codigo %%%
+\usepackage{listings}
+\lstset{
+  language = Java,
+  basicstyle=\footnotesize\ttfamily, 
+  numbers=left,               
+  numberstyle=\tiny,         
+  % stepnumber=2,              
+  numbersep=5pt,             
+  tabsize=8,                  
+  extendedchars=true,  
+  breaklines=true,       
+  keywordstyle=\color{blue},
+  frame=b,         
+  stringstyle=\color{red}\ttfamily, 
+  showspaces=false,          
+  showtabs=false,             
+  xleftmargin=17pt,
+  framexleftmargin=17pt,
+  framexrightmargin=5pt,
+  framexbottommargin=4pt,
+  % backgroundcolor=\color{lightgray},
+  showstringspaces=false              
+}
+\lstloadlanguages{C}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFont{green}{\color{green}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+% \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+
+%%% extras %%%
+\RequirePackage{marvosym} % figuras \Letter \Email 
+\usepackage{fancyhdr}     % Headers
+\usepackage{epsf}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\tikzstyle{block}=[draw opacity=0.7,line width=1.4cm]
+
+
+%%% Beamer style %%%
+\usetheme{Darmstadt}
+\usefonttheme[onlylarge]{structurebold} % fontes em negrito
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}%define tamanhos de letras
+\setbeamertemplate{navigation symbols}{}% barra de navegacao superior
+
+% \usetheme{Warsaw}      % estilos mais usado =P
+% \setbeamercovered{transparent}
+
+% -%-%-%-%-%-%-%-%-%
+% Inicio Slides  %
+% -%-%-%-%-%-%-%-%-%
+
+%%% CAPA %%%
+\title{Web Science: An Interdisciplinary
+  Approach to Understanding the Web}                               
+\subtitle{MC750 - Construção de Interfaces Homem-Computador}                               
+
+\author[Tiago S.]{
+  Tiago Chedraoui Silva \\
+  RA:082941 
+}
+\institute{Universidade Estadual de Campinas}
+\date{\today}
+%%% END CAPA %%%
+
+% The main document
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+ \begin{frame}{Outline}
+   \tableofcontents
+ \end{frame}
+
+\section{Introdução}
+
+\begin{frame}{Introdução}
+  \begin{itemize}
+  \item Atualmente, protocolos web perderam campo para web design devido à uma preocupação menos técnica e mais efetiva.
+  \item A web provocou mudanças no ensinho, na indústria, na política.
+  \item Há mais documentos web que pessoas no mundo.
+  \item Ferramentar facilitam criação de sistemas distribuídos e a utilização de algoritmos distribuídos.  Ex: Hadoop
+  \item Computação social englova vários aspectos da interação humana na web (Ex: redes sociais)
+    
+  \end{itemize}
+  
+  \pause \begin{alertblock}{Web} %iterative cycle
+    
+    \begin{itemize}
+      \pause  \item  Para CS é um meio de comunicação, um veículo de difusão de conteúdo.
+      \pause  \item  Para os novos cursos: é um mecanismo de conteúdo dinâmico que suporta interação social entre vários usuários. 
+
+    \end{itemize}
+  \end{alertblock}
+
+\end{frame}
+
+
+\begin{frame}{}
+  \begin{itemize}
+  \item A web precisa ser entendida e estudada como um fenômeno, mas também como algo a ser desenvolvido para um crescimento futuro e futuras capacidades. 
+  \end{itemize}
+
+  \pause \begin{alertblock}{Web} %iterative cycle
+    
+    \begin{itemize}
+      \pause  \item  Micro escala: Web é uma infra estrutura de linguagens artificiais e protocolos.
+      \pause  \item  Macro escala: A interação dos seres humanos como criar, conectar e consumir informação.
+    \end{itemize}
+  \end{alertblock}
+
+ \begin{itemize}
+  \item A web não foi desenvolvida utilizando um ciclo de desenvolvimento tradicional(especificar, projetar, desenvolver) visto em engenharia de software. 
+  \end{itemize}
+
+\end{frame}
+
+
+
+
+\section{Conclusão}
+\begin{frame}{Conclusão}
+\begin{itemize}
+\item A web é diferente de todos os outros sistemas
+  já estudados pois ocorre uma alta taxa de mudanças nele.   
+\item O futuro da humanidade está ligado ao futuro da web.
+\item Logo, existe o dever de que os futuros desemvolvimentos da web
+  tornem um mundo um local melhor.
+  
+\item É necessário novas metodologias para coleta de evidências 
+  dência e encontrar maneiras de antecipar 
+  como o comportamento humano afeta o desenvolvimento de um sistema que está evoluindo a uma taxa tão surpreendente 
+ 
+\end{itemize}
+\end{frame}
+
+
+\end{document}

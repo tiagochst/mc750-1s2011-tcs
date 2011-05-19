@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.06pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Conclus\~ao}{3}{0}{1}
